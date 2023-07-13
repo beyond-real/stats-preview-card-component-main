@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: hsl(233, 47%, 7%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+    margin-top: 3rem;
+  width: 95%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: hsl(244, 38%, 16%);
+}
+
+.one {
+  background: url(images/image-header-mobile.jpg);
+  background-size: 100% 100%;
+  min-height: 400px;
+}
+.overlay{
+    width: 100%;
+    min-height: 400px;
+    opacity: .6;
+    background-color: hsl(277, 64%, 61%);
+}
+.hero {
+  object-fit: cover;
+  width: 100%;
+  opacity: 0.6;
+}
+.two {
+  margin: 2rem;
+}
+.header,
+.num h3 {
+  color: hsl(0, 0%, 100%);
+}
+.p,
+.num p {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.in {
+  color: hsl(277, 64%, 61%);
+}
+.header {
+  padding: 1.5rem 1rem;
+  font-size: 25px;
+}
+.p {
+  line-height: 1.5rem;
+  font-size: 15px;
+  padding: 1rem 0.5rem;
+}
+.num {
+  margin-top: 2rem;
+}
+.num h3 {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 20px;
+  margin-bottom: .3rem;
+}
+.num p{
+    font-size: 15px;
+}
+.num section {
+  padding-block-end: 1.5rem;
+}
+@media only screen and (min-width: 600px){
+    main{
+        width: 70%;
+    }
+        
+}
+
+@media only screen and (min-width: 700px){
+    main{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    margin-top: 3rem;
+    border: 10px;
+    width: 90%;
+    height: 60%;
+    flex-direction: row-reverse;
+  }
+  .overlay{
+    height: 100%;
+
+  }
+  .one,
+  .two {
+    width: 50%;
+  }
+  .one {
+    background: url(images/image-header-desktop.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .two {
+    text-align: start;
+    margin-left: 5rem;
+  }
+  .header {
+    font-size: 40px;
+    margin-inline:0 5rem;
+    padding-top: 4rem;
+  }
+  .p{
+    margin:0 1rem 4rem .5rem;
+    font-size: 20px;
+  }
+  .num{
+    display: flex;
+    justify-content: space-between;
+    margin:0 5rem 3rem 1rem;
+  }
+  .num h3{
+    gap: 10px;
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 1400px){
+    main{
+        max-width: 70%;
+    }
+}
+@media only screen and (min-width: 2000px){
+    main{
+        max-width: 50%;
+    }
+}
